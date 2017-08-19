@@ -1,0 +1,86 @@
+#title {
+	display: block;
+	text-align: center;
+}
+
+#title a {
+	display: inline-block;
+	padding: 10px;
+	color: #986811;
+}
+
+#title a.active {
+	font-weight: bold
+}
+
+
+.swap-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1280px;
+    height: 720px;
+    z-index: 10;
+}
+
+.swap-container.hidden {
+	opacity: 0; 
+	z-index: -1;
+}
+
+.swap-container .sw-header {
+	display: block;
+	height: 50px;
+}
+
+.swap-container .sw-header .sw-left {
+	display: block;
+	width:50%;	
+	float: left;
+}
+
+.swap-container .sw-header .sw-right {
+	text-align: right;
+	display: block;
+	width:50%;
+	float: right;
+}
+
+.sw-image-changer {
+    display: inline-block;
+    color: #cca638;
+    text-decoration: none;
+    padding: 10px;
+	width: 50px;
+}
+
+.sw-image-changer.active,
+.sw-image-changer:hover {
+	color: #9e7500;
+	font-weight: bold
+}
+
+.sw-image-changer.disabled,
+.sw-image-changer.disabled:hover {
+	color: #d1d1d1;
+	cursor: not-allowed;
+	font-weight: normal;
+}
+
+.sw-text {
+	position: absolute;
+	bottom: 0px;
+	display: block;
+	color: #fff;
+	font-weight: bold;
+	padding: 10px;
+	text-shadow: 0 0 5px #000, 0 0 5px #000, 0 0 5px #000;
+}
+
+.sw-before-text {
+	text-align: right
+}
+
+.sw-after-text {
+	text-align: left
+}
